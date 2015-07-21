@@ -1,6 +1,6 @@
 /*function collect_same_elements(collection_a, collection_b) {
   var same_elements = [];
-  var count = 0;
+sd  var count = 0;
   for(var i = 0; i < collection_a.length; i++) {
     for(var j = 0; j < collection_b.length; j++) {
       for(var k = 0; k < collection_b[j].length; k++) {
