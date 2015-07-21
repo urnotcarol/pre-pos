@@ -1,5 +1,4 @@
 /*function collect_same_elements(collection_a, collection_b) {
- a //在这里写入代码
   var same_elements = [];
   var count = 0;
   for(var i = 0; i < collection_a.length; i++) {
