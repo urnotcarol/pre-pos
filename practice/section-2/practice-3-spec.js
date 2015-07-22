@@ -3,6 +3,7 @@ describe('practice-2-3', function() {
   var collection = [
     "a", "a", "a",
     "e", "e", "e", "e", "e", "e", "e",
+    "a", "a", "a",
     "h", "h", "h", "h", "h", "h", "h[3]", "h", "h",
     "t", "t-2", "t", "t", "t", "t", "t", "t", "t[10]",
     "f", "f", "f", "f", "f", "f", "f", "f", "f",
@@ -16,7 +17,7 @@ describe('practice-2-3', function() {
     var result = count_same_elements(collection);
 
     expect(result).toEqual([
-      {name: "a", summary: 3},
+      {name: "a", summary: 6},
       {name: "e", summary: 7},
       {name: "h", summary: 11},
       {name: "t", summary: 19},
