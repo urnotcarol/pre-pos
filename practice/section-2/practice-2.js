@@ -1,7 +1,7 @@
 function objectify(str) {
   var SYMBOL_START_POS = 2;
   var number = 1;
-  if(str.indexOf("-") > -1) {
+  if(/\-/.test(str)) {
     number = parseInt(str.slice(SYMBOL_START_POS));
   }
   return {
@@ -28,6 +28,6 @@ function count_same_elements(collection) {
       exist_items[0].count += val.count;
     }
   });
-  
+
   return result;
 }

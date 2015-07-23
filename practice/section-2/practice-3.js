@@ -1,9 +1,7 @@
 function objectify(str) {
   var SYMBOL_START_POS = 2;
   var count = 1;
-  if(str.indexOf("-") > -1 ||
-    str.indexOf(":") > -1 ||
-    str.indexOf("[") > -1) {
+  if (/[\-:[\]]/.test(str)) {
     count = parseInt(str.slice(SYMBOL_START_POS));
   }
   return {
